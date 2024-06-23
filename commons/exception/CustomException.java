@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.lottewellfood.sfa.common.enums.LotteErrors;
 
-public class LotteException extends Exception {
+public class CustomException extends Exception {
 
 	private static final long serialVersionUID = -7611094631104714588L;
 	
@@ -23,24 +23,24 @@ public class LotteException extends Exception {
 	 * */
 	private String[] errorMessageParams;
     
-    public LotteException() {
+    public CustomException() {
     	super();
     }
-    public LotteException(Throwable e) {
+    public CustomException(Throwable e) {
     	super(e);
     }
     
-    public LotteException(String errorCode, String errorMessage, Throwable e) {
+    public CustomException(String errorCode, String errorMessage, Throwable e) {
     	this.errorCode = errorCode;
     	this.errorMessage = errorMessage;
     }
     
-    public LotteException(LotteErrors error, String...errorMessageParams) {
+    public CustomException(LotteErrors error, String...errorMessageParams) {
     	this.errorCode = error.getErrorCode();
     	this.errorMessageParams = errorMessageParams;
     }
     
-    public LotteException(LotteErrors error, Throwable e, String...errorMessageParams) {
+    public CustomException(LotteErrors error, Throwable e, String...errorMessageParams) {
     	super(e);
     	this.errorCode = error.getErrorCode();
     	this.errorMessageParams = errorMessageParams;
