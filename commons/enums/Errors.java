@@ -1,6 +1,6 @@
 package com.lottewellfood.sfa.common.enums;
 
-public enum LotteErrors {
+public enum Errors {
 	
 	NO_SESSION_DATA				("ERR000")
 	
