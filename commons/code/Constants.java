@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public interface LotteConstants {
+public interface Constants {
 
 	public static final String	_TRANSACTION_INSERT 				= 	"I";
 	public static final String	_TRANSACTION_UPDATE 				= 	"U";
