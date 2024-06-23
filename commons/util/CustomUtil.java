@@ -31,9 +31,9 @@ import com.mcnc.bizmob.hybrid.common.server.JsonAdaptorObject.TYPE;
  * @update 2023-03-13
  * @author jhahn
  * */
-public class LotteUtil {
+public class CustomUtil {
 
-	private LotteUtil() {
+	private CustomUtil() {
 		
 	}
 	
